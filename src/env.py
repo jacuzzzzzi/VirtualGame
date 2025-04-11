@@ -12,8 +12,7 @@ with open(generate_prompt_path,'r') as f:
     generate_prompt = f.read()
 
 prompt = PromptTemplate(
-    template=generate_prompt,
-    input_variables=["country1"],
+    template=generate_prompt
 )
 
 game_state = {
@@ -45,16 +44,6 @@ game_state = {
     "clues": [],
     "solution_explanation": ""
 }
-
-
-class agonist():
-    def __init__(self, hp=100, money=100):
-        self.hp = hp
-        self.money = money
-
-class npc():
-    def __init__(self, name):
-        self.name = name
 
 # class event():
 #     def __init__(self):
